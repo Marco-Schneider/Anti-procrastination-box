@@ -14,6 +14,12 @@ int angle = 0; //Adjust the initial angle of the servomotor
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2; //Pin numbers
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7); //Inputing the pin numbers into the lcd variable of type LiquidCrystal
 
+//Buttons
+const int startButton = 6;
+const int backButton = 7;
+const int minusButton = 8;
+const int plusButton = 9;
+
 void setup() {
   // put your setup code here, to run once:
 
