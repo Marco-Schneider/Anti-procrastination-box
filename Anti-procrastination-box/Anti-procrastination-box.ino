@@ -16,7 +16,7 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7); //Inputing the pin numbers into the l
 
 //Buttons
 const int startButton = 6;
-const int backButton = 7;
+const int positionButton = 7;
 const int minusButton = 8;
 const int plusButton = 9;
 
@@ -26,7 +26,7 @@ void setup() {
   
   //Setting up the buttons as input
   pinMode(startButton, INPUT);
-  pinMode(backButton, INPUT);
+  pinMode(positionButton, INPUT);
   pinMode(minusButton, INPUT);
   pinMode(plusButton, INPUT);
 
