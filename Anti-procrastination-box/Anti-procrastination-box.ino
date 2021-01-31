@@ -21,7 +21,17 @@ const int minusButton = 8;
 const int plusButton = 9;
 
 void setup() {
-  // put your setup code here, to run once:
+  //Initializing the LCD display
+  lcd.begin(16, 2);
+  
+  //Setting up the buttons as input
+  pinMode(startButton, INPUT);
+  pinMode(backButton, INPUT);
+  pinMode(minusButton, INPUT);
+  pinMode(plusButton, INPUT);
+
+  //Attaching the servo to a pin
+  myServo.attach(10);
 
 }
 
