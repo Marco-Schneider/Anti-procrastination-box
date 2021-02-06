@@ -4,6 +4,7 @@
 
 #include <Servo.h>
 #include <LiquidCrystal.h>
+#include <time.h>
 
 //Variables of interest
 //Servomotor
@@ -20,6 +21,11 @@ const int positionButton = 7;
 const int minusButton = 8;
 const int plusButton = 9;
 
+//Entered time
+//Hours : Minutes : Seconds
+//HH : MM : SS
+int enteredTime[6];
+
 void setup() {
   //Initializing the LCD display
   lcd.begin(16, 2);
@@ -33,16 +39,31 @@ void setup() {
   //Attaching the servo to a pin
   myServo.attach(10);
 
+  //Setting up the LCD for display
+  lcd.setCursor(0, 0);
+  lcd.print("Timer: ");
+  lcd.setCursor(4, 1);
+  lcd.print("00");
+  lcd.setCursor(6,1);
+  lcd.print(":");
+  lcd.setCursor(7, 1);
+  lcd.print("00");
+  lcd.setCursor(9,1);
+  lcd.print(":");
+  lcd.setCursor(10, 1);
+  lcd.print("00");
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //The cursor can occupy the following positions: 4,1; 5,1; 7,1; 8,1; 10.1; 11,1
+  //The ideia is to let the user move the cursor along and input the numbers corresponding to hours, minutes and seconds using the minusButton and the plusButton
+  //In possession of these information, the program will procede to count the time down;
+
 
 }
 
 void display(){
-  lcd.setCursor(1, 0); //Setting the cursor to the 0, 1 position
-  lcd.print("Time remaining");
 
 
 
