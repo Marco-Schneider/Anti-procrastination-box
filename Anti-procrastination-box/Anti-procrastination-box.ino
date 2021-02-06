@@ -39,3 +39,11 @@ void loop() {
   // put your main code here, to run repeatedly:
 
 }
+
+void display(){
+  lcd.setCursor(1, 0); //Setting the cursor to the 0, 1 position
+  lcd.print("Time remaining");
+
+
+
+}
