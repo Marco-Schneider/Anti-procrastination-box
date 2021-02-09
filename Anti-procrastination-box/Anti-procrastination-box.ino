@@ -22,7 +22,7 @@ const int minusButton = 8;
 const int plusButton = 9;
 
 //Entered time
-//Hours : Minutes : Seconds
+//Hours : Minutes : Secondsa
 //HH : MM : SS
 int enteredTime[6];
 
