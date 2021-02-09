@@ -59,7 +59,7 @@ void loop() {
   //The cursor can occupy the following positions: 4,1; 5,1; 7,1; 8,1; 10.1; 11,1
   //The ideia is to let the user move the cursor along and input the numbers corresponding to hours, minutes and seconds using the minusButton and the plusButton
   //In possession of these information, the program will procede to count the time down;
-
+  //TESTE
 
 }
 
